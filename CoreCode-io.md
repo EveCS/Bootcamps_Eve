@@ -4,7 +4,7 @@
 
 ### Monday
 #### 1. Training JS #7: if..else and ternary operator
-```
+```javascript
 function saleHotdogs(n){
   let totalPrice;
   if(n < 5) {
