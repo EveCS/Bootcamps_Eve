@@ -17,7 +17,7 @@ function saleHotdogs(n){
 }
 ```
 #### 2. Training JS #8: Conditional statement--switch
-```
+```js
 function howManydays(month){
   var days;
   switch (month){
