@@ -4,7 +4,7 @@
 
 ### Monday
 #### 1. Training JS #7: if..else and ternary operator
-```javascript
+```js
 function saleHotdogs(n){
   let totalPrice;
   if(n < 5) {
@@ -62,7 +62,7 @@ function howManydays(month){
 }
 ```
 #### 3. Basic Calculator
-```
+```js
 function calculate(num1, operation, num2) {
  //TODO: make a basic calculator. 
   var result;
@@ -88,5 +88,28 @@ function calculate(num1, operation, num2) {
           break;
   }
   return result;
+}
+```
+### Tuesday
+#### 1. Even or odd
+```js
+function evenOrOdd(number) {
+  if( number%2 === 0 ) {
+    return "Even"
+  } else { 
+    return "Odd"
+  }
+}
+```
+#### 2. A wolf in sheep's clothing
+```
+function warnTheSheep(queue) {
+  let posWolf = queue.indexOf('wolf');
+  if( posWolf == queue.length-1) {
+    return "Pls go away and stop eating my sheep"
+  } else {
+    let posSheep = queue.length - (posWolf +1);
+    return "Oi! Sheep number " + posSheep + "! You are about to be eaten by a wolf!"
+  }
 }
 ```
