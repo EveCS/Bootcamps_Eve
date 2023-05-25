@@ -102,7 +102,7 @@ function evenOrOdd(number) {
 }
 ```
 #### 2. A wolf in sheep's clothing
-```
+```js
 function warnTheSheep(queue) {
   let posWolf = queue.indexOf('wolf');
   if( posWolf == queue.length-1) {
@@ -112,4 +112,24 @@ function warnTheSheep(queue) {
     return "Oi! Sheep number " + posSheep + "! You are about to be eaten by a wolf!"
   }
 }
+```
+#### 3. Decode the morse code
+```js
+decodeMorse = function(morseCode){
+
+  let frase = [];
+  let palabras = morseCode.trim().split('   ');
+  let letrasMorse = [];
+  for (let i = 0; i < palabras.length; i++) {
+    letrasMorse = palabras[i].split(' ');
+    for (let j = 0; j < letrasMorse.length; j++) {
+      letrasMorse[j] = MORSE_CODE[letrasMorse[j]];
+    }
+    frase.push(letrasMorse.join(''));
+  }
+  return frase.join(' ').trim();
+}
+```
+
+```
 ```
