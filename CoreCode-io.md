@@ -159,8 +159,21 @@ var countBits = function(n) {
   return counter;
 };
 ```
-
-```
+#### 3. Your order, please
+```js
+function order(words){
+  let phrase = words.split(' ');
+  let orderPhrase=[];
+  
+  for(let i=0; i <= phrase.length; i++) {
+     for (let j = 0; j < phrase.length; j++) {
+       if (phrase[j].indexOf(i) > -1) {
+        orderPhrase.push(phrase[j]);
+       }
+     }
+  }
+  return orderPhrase.join(' ');
+}
 ```
 
 ```
