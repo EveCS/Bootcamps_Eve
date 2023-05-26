@@ -1,6 +1,7 @@
 # BOOTCAMP - CORE CODE
 
 # INDEX
+1. [Week 08](https://github.com/EveCS/Bootcamps_Eve/blob/main/CoreCode-io.md#1-week-08--challenges)
 
 _________________________________________________
 
