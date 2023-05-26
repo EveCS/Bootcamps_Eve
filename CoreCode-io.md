@@ -1,5 +1,9 @@
 # BOOTCAMP - CORE CODE
 
+# INDEX
+
+_________________________________________________
+
 ## 1. Week 08 | Challenges
 
 ### Monday
@@ -175,7 +179,8 @@ function order(words){
   return orderPhrase.join(' ');
 }
 ```
-
+### Thursday
+#### 1. Counting duplicates
 ```
 ```
 
