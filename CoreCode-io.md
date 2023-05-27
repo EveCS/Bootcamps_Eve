@@ -2,6 +2,7 @@
 
 # INDEX
 [1. Week 08](https://github.com/EveCS/Bootcamps_Eve/blob/main/CoreCode-io.md#1-week-08--challenges)
+
 [2. Week 09](https://github.com/EveCS/Bootcamps_Eve/blob/main/CoreCode-io.md#1-week-09--challenges)
 _________________________________________________
 
@@ -222,8 +223,9 @@ function toCamelCase(str) {
   return phrase;
 }
 ```
+## 2. Week 09 | Challenges
 
-```
+```js
 ```
 
 ```
