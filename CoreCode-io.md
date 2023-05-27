@@ -182,6 +182,47 @@ function order(words){
 ```
 ### Thursday
 #### 1. Counting duplicates
+```js
+function duplicateCount(text) {
+  let counter = 0;
+  text = text.toLowerCase();
+  for (let i = 0; i < text.length; i++) {
+    if (text.indexOf(text[i]) !== text.lastIndexOf(text[i])) {
+      counter++;
+      text = text.replace(new RegExp(text[i], 'g'), '');
+      i = i - 1;
+    }
+  }
+  return counter;
+}
+```
+#### 2. Valid parentheses
+```js
+function validParentheses(parens) {
+  let counter1 = 0, counter2 = 0;
+  for(let i = 0; i < parens.length; i++) {
+    if(parens[i] === "(" ) counter1++;
+    else counter2 ++;
+  }
+  if(counter1 === counter2) return true;
+  else return false;
+}
+```
+#### 3. Convert string to camel case
+```js
+function toCamelCase(str) {
+  let phrase = '';
+  for (let i = 0; i < str.length; i++) {
+    if (i != 0 && (str[i - 1] === '_' || str[i - 1] === '-')) {
+      phrase += str[i].toUpperCase();
+    } else if (str[i] != '-' && str[i] != '_') {
+      phrase += str[i];
+    }
+  }
+  return phrase;
+}
+```
+
 ```
 ```
 
