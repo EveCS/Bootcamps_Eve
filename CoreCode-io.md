@@ -225,7 +225,24 @@ function toCamelCase(str) {
 ```
 ## 2. Week 09 | Challenges
 
+### Monday
+#### 1. "this" is a problem
 ```js
+function NameMe(first, last) {
+    this.firstName = first;
+    this.lastName = last;
+    return {name: this.firstName + ' ' + this.lastName};
+}
+```
+#### 2. "Thinkful - List and Loop Drills: Lists of lists"
+```js
+
+```
+
+```
+```
+
+```
 ```
 
 ```
