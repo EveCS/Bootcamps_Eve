@@ -236,14 +236,124 @@ function NameMe(first, last) {
 ```
 #### 2. "Thinkful - List and Loop Drills: Lists of lists"
 ```js
+function processData(data){
+  let reduce = [];
+  let total=1;
+  for(let i=0; i<data.length; i++) {
+    reduce.push(data[i][0]-data[i][1]);
+  }
+  for(let i = 0; i < reduce.length; i++) {
+    total = total * reduce[i];
+  }
+  return total;
+}
+```
+#### 3. Stop gninnipS My sdroW!
+```js
+function spinWords(string){
+  string = string.split(' ');
+  for(let i = 0; i < string.length; i++) {
+    if(string[i].length >= 5) {
+      let word = string[i].split('');
+      let wordRev = word.reverse();
+      string[i] = wordRev.join('');
+    }
+  }
+  return string.join(' ');
+}
+```
+### Tuesday
+
+#### 2. Who likes it?
+```js
+function likes(names) {
+  if(names.length < 1) return "no one likes this"
+  if(names.length < 2) return names[0] + " likes this"
+  if(names.length < 3) return names[0]+ " and " + names[1] + " like this"
+  if(names.length < 4) return names[0]+ ", " + names[1] +  " and " + names[2] + " like this"
+  else return names[0]+ ", " + names[1] +  " and " + (names.length-2) + " others like this"
+}
+```
+### Wednesday
+
+#### Moving Zeros To The End
+```js
+function moveZeros(arr) {
+  let zeros , array;
+  zeros = arr.filter(element => element === 0);  
+  array = arr.filter(element => element !== 0);
+  return array.concat(zeros);
+}
+```
+#### Valid Parentheses
+```js
+function validParentheses(parens) {
+  parens=parens.split('');
+  let initP = parens.filter(element => element === ('(')); ;
+  let closeP = parens.filter(element => element === ')');
+   
+  if(initP.length === closeP.length) return true;
+  else return false;
+}
+```
+### Thursday
+
+#### 1. The Hashtag Generator
+```js
+function generateHashtag (str) {
+  if(str.length === 0) return false;
+  if(str.length > 140 ) return false + " Too long";
+  
+  str = str.split(' ');
+  str = str.map((word) => word.charAt(0).toUpperCase() + word.slice(1));
+  str = "#" + str.join('');
+  return str;
+}
+```
+#### 2. String incrementer
+```js
+function incrementString (str) {
+  let num = "";
+  for (let i = str.length - 1; i >= 0; i--) {
+    if (isNaN(parseInt(str[i]))) {
+      break;
+    }
+    num = str[i] + num;
+  }
+  if (num === "") {
+    return str + "1";
+  }
+  let newNum = (parseInt(num) + 1).toString();
+  while (newNum.length < num.length) {
+    newNum = "0" + newNum;
+  }
+  return str.slice(0, str.length - num.length) + newNum;
+}
+```
 
 ```
-
 ```
 ```
-
 ```
 ```
-
+```
+```
+```
+```
+```
+```
+```
+```
+```
+```
+```
+```
+```
+```
+```
+```
+```
+```
+```
 ```
 ```
