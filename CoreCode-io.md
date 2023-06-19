@@ -330,30 +330,5 @@ function incrementString (str) {
   return str.slice(0, str.length - num.length) + newNum;
 }
 ```
-
-```
-```
-```
-```
-```
-```
-```
-```
-```
-```
-```
-```
-```
-```
-```
-```
-```
-```
-```
-```
-```
-```
-```
-```
-```
-```
+## 3. Week 10 | Challenges
+Iniciar Proyecto Calculadora
